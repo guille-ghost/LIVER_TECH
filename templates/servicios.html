@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<div class="py-4 animate-fade-in">
+    
+    <!-- Encabezado de la Sección -->
+    <div class="text-center mb-5">
+        <span class="badge bg-primary text-white mb-2 fw-bold tracking-wider px-3 py-2 text-uppercase" style="font-size: 0.75rem;">Unidades Operativas</span>
+        <h2 class="display-5 fw-bold text-dark">Divisiones de Ejecución y Logística</h2>
+        <p class="text-muted col-lg-7 mx-auto" style="font-size: 1.05rem;">Haz clic sobre cualquiera de nuestras divisiones estratégicas para desplegar la documentación técnica y responsabilidades asociadas.</p>
+    </div>
+    
+    <!-- NUEVA CLASE: Cuadrícula Forzada en 3 Columnas Separadas -->
+    <div class="grid-servicios-b2b">
+        
+        <!-- TARJETA 1 -->
+        <div class="card-futurista" data-bs-toggle="modal" data-bs-target="#modalMetal">
+            <div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary font-monospace fw-bold small">// DIVISIÓN 01</span>
+                    <span class="fs-2">🏗️</span>
+                </div>
+                <h4 class="fw-bold text-dark mb-3">Soluciones Metalmecánicas</h4>
+                <p class="text-muted small mb-4" style="text-align: justify; line-height: 1.6;">Fabricación pesada operada mediante un modelo de integración vertical con infraestructura industrial aliada y riguroso control en planta.</p>
+            </div>
+            <div class="text-primary fw-semibold small text-end mt-auto">Ver detalles técnicos ➔</div>
+        </div>
+
+        <!-- TARJETA 2 -->
+        <div class="card-futurista" data-bs-toggle="modal" data-bs-target="#modalFoto">
+            <div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary font-monospace fw-bold small">// DIVISIÓN 02</span>
+                    <span class="fs-2">☀️</span>
+                </div>
+                <h4 class="fw-bold text-dark mb-3">Energía Fotovoltaica</h4>
+                <p class="text-muted small mb-4" style="text-align: justify; line-height: 1.6;">Ingeniería, dimensionamiento y despliegue gradual de proyectos sostenibles orientados a la reducción medible de emisiones globales.</p>
+            </div>
+            <div class="text-primary fw-semibold small text-end mt-auto">Ver detalles técnicos ➔</div>
+        </div>
+
+        <!-- TARJETA 3 -->
+        <div class="card-futurista" data-bs-toggle="modal" data-bs-target="#modalMela">
+            <div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary font-monospace fw-bold small">// DIVISIÓN 03</span>
+                    <span class="fs-2">📦</span>
+                </div>
+                <h4 class="fw-bold text-dark mb-3">Mobiliario Modular</h4>
+                <p class="text-muted small mb-4" style="text-align: justify; line-height: 1.6;">Célula técnica especializada en proyectos de melamina, modelado conceptual tridimensional avanzado y acabados de alta gama.</p>
+            </div>
+            <div class="text-primary fw-semibold small text-end mt-auto">Ver detalles técnicos ➔</div>
+        </div>
+
+    </div>
+
+    <!-- [AQUÍ ABAJO DEJAN LOS MISMOS MODALES Y EL BLOQUE S.S.T. QUE YA TENÍAS] -->
+
+
+    <!-- MODAL 1: METALMECÁNICA -->
+    <div class="modal fade" id="modalMetal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+                <div class="modal-header bg-light border-bottom p-4">
+                    <h5 class="modal-title fw-bold text-dark">⚙️ División de Soluciones Metalmecánicas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" style="color: #1e293b;">
+                    <span class="badge bg-secondary text-white mb-3">Manufactura Estratégica</span>
+                    <p class="justify-text mb-4"><strong>Descripción Ampliada:</strong> Unidad de fabricación pesada integrada con nuestra aliada estratégica <strong>IDCOM Proyectos S.A.C.</strong> Este esquema nos otorga capacidad instalada escalable inmediata y un control técnico riguroso en planta.</p>
+                    <div class="bg-light p-3 rounded">
+                        <h6 class="fw-bold text-primary mb-2">// RESPONSABILIDADES Y AUDITORÍA:</h6>
+                        <ul class="mb-0 small text-muted">
+                            <li class="mb-1 text-dark">Cálculos estructurales y simulaciones avanzadas con normas internacionales.</li>
+                            <li class="mb-1 text-dark">Homologación directa de soldadores y especialistas industriales bajo supervisión.</li>
+                            <li class="mb-0 text-dark">Integración vertical para la reducción de costos fijos operativos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: FOTOVOLTAICA -->
+    <div class="modal fade" id="modalFoto" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+                <div class="modal-header bg-light border-bottom p-4">
+                    <h5 class="modal-title fw-bold text-dark">☀️ División de Energía Fotovoltaica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" style="color: #1e293b;">
+                    <span class="badge bg-success text-white mb-3">Eficiencia Energética</span>
+                    <p class="justify-text mb-4"><strong>Descripción Ampliada:</strong> Unidad de desarrollo enfocada en la ingeniería y despliegue gradual de soluciones solares sostenibles para disminuir el impacto ambiental corporativo.</p>
+                    <div class="bg-light p-3 rounded">
+                        <h6 class="fw-bold text-primary mb-2">// RESPONSABILIDADES Y AUDITORÍA:</h6>
+                        <ul class="mb-0 small text-muted">
+                            <li class="mb-1 text-dark"><strong>Dirección Técnica:</strong> Jesús A. Curo Juanito (Gerencia General).</li>
+                            <li class="mb-1 text-dark">Análisis de viabilidad, radiación y retorno de inversión industrial.</li>
+                            <li class="mb-0 text-dark">Diseños alineados con objetivos globales de descarbonización empresarial.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: MELAMINA -->
+    <div class="modal fade" id="modalMela" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 12px;">
+                <div class="modal-header bg-light border-bottom p-4">
+                    <h5 class="modal-title fw-bold text-dark">📦 División de Proyectos de Melamina</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" style="color: #1e293b;">
+                    <span class="badge bg-info text-dark mb-3">Mobiliario Modular</span>
+                    <p class="justify-text mb-4"><strong>Descripción Ampliada:</strong> Especialistas en diseño tridimensional conceptual, optimización milimétrica de tableros y manufactura a medida de mobiliario modular comercial de alta gama.</p>
+                    <div class="bg-light p-3 rounded">
+                        <h6 class="fw-bold text-primary mb-2">// RESPONSABILIDADES Y AUDITORÍA:</h6>
+                        <ul class="mb-0 small text-muted">
+                            <li class="mb-1 text-dark"><strong>Líder Técnico de Área:</strong> Jimmy O. Suaña Curo.</li>
+                            <li class="mb-1 text-dark">Modelado 3D interactivo previo para aprobación de prototipos del cliente.</li>
+                            <li class="mb-0 text-dark">Despliegue logístico ágil para montajes limpios con tolerancia cero a imperfecciones.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOQUE S.S.T. INFERIOR -->
+    <div class="p-4 bg-white border rounded-3 shadow-sm my-5 card-futurista">
+        <div class="row align-items-center">
+            <div class="col-lg-9">
+                <h5 class="fw-bold text-dark mb-2">🛡️ Soporte Integral en Seguridad y Control Técnico</h5>
+                <p class="text-muted mb-0 small" style="text-align: justify; line-height: 1.5;">Todas nuestras divisiones operan bajo un modelo de gestión ágil (<strong>Asset-Light</strong>). Optimizamos costos fijos y garantizamos respuestas escalables mediante un enfoque de tolerancia cero al riesgo respaldado por soporte continuo en Seguridad y Salud en el Trabajo (SST) y Análisis de Trabajo Seguro (ATS).</p>
+            </div>
+            <div class="col-lg-3 text-lg-end mt-3 mt-lg-0">
+                <a href="https://wa.me" target="_blank" class="btn btn-tech-primary fw-semibold w-100">📂 Solicitar Dossier</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // 1. Detectar clics en las tarjetas para abrir las ventanas
+    document.querySelectorAll('.card-futurista').forEach(tarjeta => {
+        // Ignorar si se hace clic directo en el botón de WhatsApp interno
+        if (!tarjeta.querySelector('a')) {
+            tarjeta.addEventListener('click', function() {
+                const objetivoId = this.getAttribute('data-bs-target');
+                const ventanaEmergente = document.querySelector(objetivoId);
+                if (ventanaEmergente) {
+                    ventanaEmergente.classList.add('show');
+                    ventanaEmergente.style.display = 'block';
+                }
+            });
+        }
+    });
+
+    // 2. Detectar clics en la "X" para cerrar las ventanas
+    document.querySelectorAll('[data-bs-dismiss="modal"]').forEach(botonCerrar => {
+        botonCerrar.addEventListener('click', function() {
+            const ventanaEmergente = this.closest('.modal');
+            if (ventanaEmergente) {
+                ventanaEmergente.classList.remove('show');
+                ventanaEmergente.style.display = 'none';
+            }
+        });
+    });
+
+    // 3. Cerrar la ventana si el usuario hace clic en la zona oscura exterior
+    window.addEventListener('click', function(evento) {
+        if (evento.target.classList.contains('modal')) {
+            evento.target.classList.remove('show');
+            evento.target.style.display = 'none';
+        }
+    });
+</script>
+{% endblock %}
