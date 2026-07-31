@@ -1,5 +1,5 @@
 /* =======================================================
-   Liver Tech S.A.C. — Interacciones del encabezado
+   Mega Soluciones SAC — Interacciones del encabezado
    ======================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
