@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =======================================================
+   Liver Tech S.A.C. — Estilos personalizados
+   (mismo contenido que styles.css, pero como capa @layer
+   para que Tailwind purgue correctamente en el build)
+   ======================================================= */
+
+@layer base {
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Oswald', Arial, sans-serif;
+  }
+
+  .angle-cut {
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+  }
+
+  .angle-cut-both {
+    clip-path: polygon(3% 0, 100% 0, 97% 100%, 0% 100%);
+  }
+
+  .diag-stripe {
+    background-image: repeating-linear-gradient(
+      135deg,
+      #e8580c 0 14px,
+      #f3762c 14px 28px
+    );
+  }
+}
+
+@layer components {
+  .dropdown-panel {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+  }
+
+  .has-dropdown:hover .dropdown-panel,
+  .has-dropdown:focus-within .dropdown-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .mobile-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .mobile-submenu.open {
+    max-height: 400px;
+  }
+
+  .industry-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .industry-card img {
+    transition: transform 0.5s ease;
+  }
+
+  .industry-card:hover img {
+    transform: scale(1.08);
+  }
+
+  .industry-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(17, 20, 23, 0.15) 0%,
+      rgba(17, 20, 23, 0.85) 100%
+    );
+  }
+}
+
+/* Scrollbar (fuera de @layer: pseudo-elementos WebKit no siempre se purgan bien) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1b1f24;
+}
+::-webkit-scrollbar-thumb {
+  background: #e8580c;
+  border: 2px solid #1b1f24;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f3762c;
+}

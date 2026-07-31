@@ -1,0 +1,12 @@
+{
+  "name": "liver-tech-sac",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./styles.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
